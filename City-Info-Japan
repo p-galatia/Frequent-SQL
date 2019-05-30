@@ -1,0 +1,4 @@
+SELECT cities.name AS "City", countries_plus.name AS "Country", countries_plus.surface_area, countries_plus.geosize_group
+FROM cities
+JOIN countries_plus ON cities.country_code = countries_plus.code
+WHERE cities.country_code = 'JPN';
